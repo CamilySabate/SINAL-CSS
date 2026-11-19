@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#231f26">
+  <title>SINAL CSS — INV-025</title>
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="shortcut icon" href="sinal.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="scanline" aria-hidden="true"></div>
+
+  <div class="station">
+    <header class="topbar">
+      <div class="brand">
+        <img class="brand-logo" src="logo.png" alt="" width="78" height="48">
+        <div>
+          <strong>SINAL<span>86</span></strong>
+          <small>DEPARTAMENTO DE INVESTIGAÇÃO DE INTERFACES</small>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Seções do arquivo">
+        <a href="#briefing-title">Ordem</a>
+        <a href="#investigation-title">Evidências</a>
+        <a href="#clues-title">Pistas</a>
+        <a href="#operator-title">Operador</a>
+      </nav>
+
+      <div class="topbar-right">
+        <div class="frequency">
+          <span class="frequency-light"></span>
+          CANAL 07 / 86.4 MHz
+        </div>
+        <a class="access-button" href="#challenge-title">Encerrar caso</a>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <section class="case-header" aria-labelledby="case-title">
+        <div class="case-heading">
+          <div class="file-label"><span></span> ARQUIVO CONFIDENCIAL / CASO ÚNICO</div>
+          <h1 id="case-title">O Sinal que <em>não deveria existir</em></h1>
+          <p>Uma antiga estação de monitoramento apresentou uma alteração visual durante a última transmissão. O conteúdo parece intacto. A interface, não.</p>
+        </div>
+
+        <div class="case-side">
+          <img class="case-logo" src="logo.png" alt="Logotipo do Sinal 86: uma televisão antiga com antenas, ondas de sinal e uma órbita em laranja" width="270" height="165">
+          <aside class="case-file" aria-label="Identificação do caso">
+            <span>ARQUIVO</span>
+            <strong>INV-025</strong>
+            <small>16 / OUT / 86</small>
+            <i>● ABERTO</i>
+          </aside>
+        </div>
+      </section>
+
+      <section class="briefing panel" aria-labelledby="briefing-title">
+        <div class="panel-title">
+          <span class="section-number">01</span>
+          <div><small>ORDEM DE SERVIÇO</small><h2 id="briefing-title">Reconstrua a estação.</h2></div>
+        </div>
+
+        <div class="briefing-row">
+          <div class="briefing-copy">
+            <p>O laboratório recebeu apenas esta tela. Não existe versão alternativa, página seguinte ou arquivo de referência. A missão é descobrir por que determinados elementos não obedecem ao comportamento esperado.</p>
+            <p class="warning-copy"><b>ATENÇÃO:</b> alguns problemas são visuais; outros só aparecem quando você interage com a interface.</p>
+          </div>
+
+          <div class="mission-list" role="group" aria-label="Etapas da missão">
+            <div><span>A</span><strong>LOCALIZAR</strong><small>os sinais fora do lugar</small></div>
+            <div><span>B</span><strong>ISOLAR</strong><small>a regra responsável</small></div>
+            <div><span>C</span><strong>RESTAURAR</strong><small>sem apagar o ruído</small></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="investigation panel" aria-labelledby="investigation-title">
+        <div class="section-head">
+          <div class="panel-title">
+            <span class="section-number">02</span>
+            <div><small>QUADRO PRINCIPAL</small><h2 id="investigation-title">Evidências da transmissão</h2></div>
+          </div>
+          <span class="status-stamp">EM ANÁLISE</span>
+        </div>
+
+        <div class="evidence-layout">
+          <div class="evidence-board">
+            <article class="evidence-card evidence-alpha">
+              <div class="evidence-top"><span class="evidence-id">E-01</span><span class="evidence-state">REGISTRADO</span></div>
+              <div class="evidence-symbol symbol-wave" aria-hidden="true">≈</div>
+              <h3>Frequência fantasma</h3>
+              <p>O sinal aparece antes do horário registrado no relatório.</p>
+              <div class="evidence-meta"><span>14:07:32</span><span>CANAL 09</span></div>
+            </article>
+
+            <article class="evidence-card evidence-beta">
+              <div class="evidence-top"><span class="evidence-id">E-02</span><span class="evidence-state">INCONSISTENTE</span></div>
+              <div class="evidence-symbol symbol-cross" aria-hidden="true">+</div>
+              <h3>Marca fora do eixo</h3>
+              <p>Um ponto foi deslocado alguns milímetros sem alteração no arquivo.</p>
+              <div class="evidence-meta"><span>14:08:11</span><span>QUADRO 04</span></div>
+            </article>
+
+            <article class="evidence-card evidence-gamma">
+              <div class="evidence-top"><span class="evidence-id">E-03</span><span class="evidence-state">SUSPEITO</span></div>
+              <div class="evidence-symbol symbol-ring" aria-hidden="true"></div>
+              <h3>O terceiro pulso</h3>
+              <p>Existe uma repetição que não consta no registro original.</p>
+              <div class="evidence-meta"><span>14:09:03</span><span>MEMÓRIA B</span></div>
+            </article>
+
+            <article class="evidence-card evidence-delta">
+              <div class="evidence-top"><span class="evidence-id">E-04</span><span class="evidence-state">CONFIDENCIAL</span></div>
+              <div class="evidence-symbol symbol-dial" aria-hidden="true">◉</div>
+              <h3>Leitura invertida</h3>
+              <p>A legenda e o marcador não parecem pertencer ao mesmo sistema.</p>
+              <div class="evidence-meta"><span>14:10:46</span><span>PAINEL C</span></div>
+            </article>
+          </div>
+
+          <aside class="signal-console" aria-labelledby="console-title">
+            <div class="console-header">
+              <div><small>RECEPTOR ANALÓGICO</small><h3 id="console-title">MONITOR 04</h3></div>
+              <div class="console-lights" aria-hidden="true"><i></i><i></i><i></i></div>
+            </div>
+
+            <div class="dial" aria-hidden="true">
+              <div class="dial-inner"><span>86</span><small>MHz</small></div>
+              <i class="needle"></i>
+            </div>
+
+            <div class="meter">
+              <span>NÍVEL</span>
+              <div class="meter-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              <b>-07.4 dB</b>
+            </div>
+
+            <div class="console-log" role="group" aria-label="Registro do receptor">
+              <p><span>14:07</span> carrier detected</p>
+              <p><span>14:08</span> visual drift</p>
+              <p><span>14:09</span> unknown packet</p>
+              <p><span>14:10</span> <b>signal persists</b></p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="clues panel" aria-labelledby="clues-title">
+        <div class="section-head">
+          <div class="panel-title">
+            <span class="section-number">03</span>
+            <div><small>REGISTROS CRUZADOS</small><h2 id="clues-title">Pistas da estação</h2></div>
+          </div>
+          <span class="micro-note">NÃO CONFIE NA PRIMEIRA LEITURA</span>
+        </div>
+
+        <div class="clue-list">
+          <div class="clue-card"><span class="clue-mark">A</span><h3>Especificidade</h3><p>Há mais de uma regra tentando decidir a aparência de um mesmo elemento.</p></div>
+          <div class="clue-card"><span class="clue-mark">B</span><h3>Unidades</h3><p>Uma medida parece correta até a janela mudar de tamanho.</p></div>
+          <div class="clue-card"><span class="clue-mark">C</span><h3>Posicionamento</h3><p>Um objeto deveria acompanhar o painel, mas insiste em obedecer outro contexto.</p></div>
+          <div class="clue-card"><span class="clue-mark">D</span><h3>Flexbox</h3><p>A ordem visual nem sempre corresponde à ordem no documento.</p></div>
+          <div class="clue-card"><span class="clue-mark">E</span><h3>Pseudoestado</h3><p>Algumas falhas aparecem apenas quando você interage com a interface.</p></div>
+          <div class="clue-card clue-card-last"><span class="clue-mark">?</span><h3>Acesso</h3><p>Existe uma forma de entrar em uma parte da estação que não depende do mouse.</p></div>
+        </div>
+      </section>
+
+      <section class="operator panel" aria-labelledby="operator-title">
+        <div class="operator-copy">
+          <div class="panel-title">
+            <span class="section-number">04</span>
+            <div><small>ÚLTIMO REGISTRO</small><h2 id="operator-title">O operador deixou uma mensagem.</h2></div>
+          </div>
+          <p>“Se você encontrou esta tela, não procure outra. O problema está aqui. Compare o que você vê com a forma como a página se comporta.”</p>
+        </div>
+
+        <div class="operator-terminal" tabindex="0" role="group" aria-label="Terminal de mensagens">
+          <span>LISTENING...</span><strong>_</strong><small>pressione TAB e observe o percurso</small>
+        </div>
+      </section>
+
+      <section class="challenge panel" aria-labelledby="challenge-title">
+        <div class="challenge-badge">CASO<br>ÚNICO</div>
+        <div class="challenge-copy">
+          <small>ENCERRAMENTO DO ARQUIVO</small>
+          <h2 id="challenge-title">Encontre todas as anomalias.</h2>
+          <p>Corrija a estação usando apenas CSS. Depois registre o que sua equipe encontrou antes de solicitar a conclusão.</p>
+        </div>
+        <div class="challenge-actions">
+          <a class="final-button" href="#case-title">Voltar ao topo</a>
+          <a class="review-button" href="#clues-title">Revisar pistas</a>
+          <span class="challenge-code">ARQUIVO / INV-025</span>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>SINAL 86 / ARQUIVO INV-025</span>
+      <span>LABORATÓRIO DE INTERFACES <i></i> ACESSO RESTRITO</span>
+    </footer>
+  </div>
+</body>
+</html>
